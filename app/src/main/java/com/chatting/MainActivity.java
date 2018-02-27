@@ -14,5 +14,6 @@ public class MainActivity extends AppCompatActivity {
         TextView tv = (TextView) findViewById(R.id.all);
         //这是第一次往上面push
        //雷哥666
+        //合不合格
     }
 }
