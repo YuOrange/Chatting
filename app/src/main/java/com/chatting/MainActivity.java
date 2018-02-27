@@ -11,9 +11,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         TextView tv = (TextView) findViewById(R.id.all);
         //这是第一次往上面push
        //雷哥666
         //合不合格
+        //刘哲第二次上传
+        //开始觉得卡就
+
     }
 }
