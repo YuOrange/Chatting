@@ -1,22 +1,34 @@
 package com.chatting;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.os.Handler;
+import android.os.Message;
+import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-
+private Handler handler=new Handler(){
+    @Override
+    public void handleMessage(Message msg) {
+        super.handleMessage(msg);
+        if (msg.what==0) {
+            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    }
+};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    handler.sendEmptyMessageDelayed(0,1000);
 
+    }
 
-        TextView tv = (TextView) findViewById(R.id.all);
-        //这是第一次往上面push
-       //雷哥666
-        //合不合格
-        //刘哲第二次上传
-         //刘哲
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        handler.removeMessages(0);
     }
 }
