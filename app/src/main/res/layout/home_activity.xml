@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/message_pic_selector"
+            android:gravity="center_horizontal"
+            android:text="消息"
+            android:textColor="@drawable/home_text_selector"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_lxr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/friends_pic_selector"
+            android:gravity="center_horizontal"
+            android:text="联系人"
+            android:textColor="@drawable/home_text_selector"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/center_pic_selector"
+            android:gravity="center_horizontal"
+            android:text="我的"
+            android:textColor="@drawable/home_text_selector"
+            android:textSize="14sp" />
+
+    </RadioGroup>
+</RelativeLayout>
