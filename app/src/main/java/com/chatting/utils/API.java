@@ -8,4 +8,5 @@ public class API {
 
     public static final String URl="http://www.bwstudent.com/instantMessaging/";
     public static final String LOGIN="user/login";
+    public static final String REGISTER="user/register";
 }
