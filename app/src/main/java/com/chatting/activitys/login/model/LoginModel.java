@@ -5,4 +5,7 @@ package com.chatting.activitys.login.model;
  */
 
 public class LoginModel {
+public void getlogin(){
+
+}
 }
