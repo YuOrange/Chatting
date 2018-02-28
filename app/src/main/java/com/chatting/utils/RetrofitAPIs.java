@@ -1,10 +1,7 @@
-﻿package com.chatting.utils;
-
+package com.chatting.utils;
 
 import com.chatting.activitys.login.loginbean.LoginBean;
-
 import java.util.Map;
-
 import io.reactivex.Observable;
 import retrofit2.http.GET;
 import retrofit2.http.QueryMap;
@@ -15,7 +12,6 @@ import retrofit2.http.QueryMap;
 
 public interface RetrofitAPIs {
     //登录
-@GET(API.LOGIN)
+    @GET(API.LOGIN)
     Observable <LoginBean>login(@QueryMap Map<String,String>map);
-
 }
