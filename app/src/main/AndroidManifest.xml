@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.chatting">
 
+    //网络权限
+    <uses-permission android:name="android.permission.INTERNET" />
+    //网络状态判断权限
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:name=".utils.ApplicationS"
         android:allowBackup="true"
@@ -18,9 +22,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activitys.HomeActivity"></activity>
-        <activity android:name=".activitys.login.view.LoginActivity"/>
-        <activity android:name=".activitys.register.view.RegisterActivity"/>
-        <activity android:name=".activitys.losspassword.view.LossActivity"/>
+        <activity android:name=".activitys.login.view.LoginActivity" />
+        <activity android:name=".activitys.register.view.RegisterActivity" />
+        <activity android:name=".activitys.losspassword.view.LossActivity" />
 
     </application>
 

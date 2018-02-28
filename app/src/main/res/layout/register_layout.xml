@@ -151,4 +151,12 @@
         android:text="注册"
         android:textSize="18sp" />
 
+    <TextView
+        android:id="@+id/registerResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="解析结果"
+        android:textSize="18sp" />
+
 </LinearLayout>

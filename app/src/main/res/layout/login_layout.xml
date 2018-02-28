@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4e92ff"
-    tools:context="com.chatting.activitys.login.view.LoginActivity">
+    android:background="#4e92ff">
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="166dp">
+        android:layout_marginTop="166dp"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/edit_name"
@@ -33,9 +31,9 @@
             android:hint="请输入密码" />
 
         <LinearLayout
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
             <EditText
@@ -45,43 +43,48 @@
                 android:alpha="0.5"
                 android:background="#fff"
                 android:hint="请输入验证码" />
-           <com.facebook.drawee.view.SimpleDraweeView
-              android:id="@+id/sdv_verify"
-               android:layout_width="150dp"
-               android:layout_height="60dp" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_verify"
+                android:layout_width="150dp"
+                android:layout_height="60dp" />
         </LinearLayout>
+
         <TextView
             android:id="@+id/but_login"
-            android:layout_marginTop="30dp"
             android:layout_width="280dp"
             android:layout_height="50dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/textview_circle"
-            android:textColor="#fff"
+            android:gravity="center"
             android:text="登录"
-            android:gravity="center"/>
+            android:textColor="#fff" />
+
         <TextView
             android:layout_width="280dp"
             android:layout_height="50dp"
             android:gravity="center"
             android:text="没有收到验证码？试试语音验证"
-            android:textColor="#fff"/>
+            android:textColor="#fff" />
+
         <LinearLayout
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:text="忘记密码"
-                android:textColor="#fff"/>
+                android:textColor="#fff" />
+
             <TextView
                 android:id="@+id/but_register"
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
-                android:text="注册账号"
-                android:textColor="#fff"
                 android:gravity="right"
-                />
+                android:text="注册账号"
+                android:textColor="#fff" />
         </LinearLayout>
     </LinearLayout>
 
@@ -93,6 +96,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="25dp"
         android:text="我已经阅读《隐私和安全协议》"
-        android:textColor="#fff"/>
+        android:textColor="#fff" />
 
 </RelativeLayout>

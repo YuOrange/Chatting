@@ -7,7 +7,7 @@ import com.chatting.activitys.register.view.IView;
  */
 
 public abstract class IPresenter<T extends IView> {
-    private T view;
+    protected T view;
     //有参构造器
     public IPresenter(T view) {
         this.view = view;

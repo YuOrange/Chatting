@@ -14,7 +14,7 @@ public class ApplicationS extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        retrofitAPIs = new RetrofitManager(API.URl).create(RetrofitAPIs.class);
+//        retrofitAPIs = new RetrofitManager(API.URl).create(RetrofitAPIs.class);
         //初始化Fresco包
         //Fresco.initialize(this);
         //初始化zxing包

@@ -1,4 +1,4 @@
-﻿package com.chatting.utils;
+package com.chatting.utils;
 
 
 import com.chatting.activitys.login.loginbean.LoginBean;
