@@ -16,5 +16,6 @@ public class RegisterActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_layout);
 
+
     }
 }
