@@ -1,8 +1,9 @@
 package com.chatting.utils;
 
-
 import com.chatting.activitys.login.loginbean.LoginBean;
 import com.chatting.activitys.register.bean.RegisterBean;
+
+import com.chatting.activitys.login.loginbean.LoginBean;
 
 import java.util.Map;
 
@@ -22,8 +23,5 @@ public interface RetrofitAPIs {
 
     //注册
     @GET(API.REGISTER)
-    Observable<RegisterBean> register(@Query("phoneNumber")String phoneNumber,@Query("password")String password,@Query("password1")String password1,@Query("realName")String realName,@Query("verify")String verify);
-
-
-
+    Observable<RegisterBean> register(@Query("phoneNumber") String phoneNumber, @Query("password") String password, @Query("password1") String password1, @Query("realName") String realName, @Query("verify") String verify);
 }
