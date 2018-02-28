@@ -2,8 +2,6 @@ package com.chatting.utils;
 
 import android.app.Application;
 import android.widget.Toast;
-
-import com.facebook.drawee.backends.pipeline.Fresco;
 //import com.uuzuche.lib_zxing.activity.ZXingLibrary;
 
 /**
@@ -12,10 +10,11 @@ import com.facebook.drawee.backends.pipeline.Fresco;
  */
 public class ApplicationS extends Application {
     private static ApplicationS mInstance;
-
+    public static RetrofitAPIs retrofitAPIs;
     @Override
     public void onCreate() {
         super.onCreate();
+        retrofitAPIs = new RetrofitManager(API.URl).create(RetrofitAPIs.class);
         //初始化Fresco包
         //Fresco.initialize(this);
         //初始化zxing包
