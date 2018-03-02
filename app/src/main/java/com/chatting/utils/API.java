@@ -9,4 +9,6 @@ public interface API {
     public static final String URl="http://www.bwstudent.com/instantMessaging/";
     public static final String LOGIN="user/login";
     public static final String REGISTER="user/register";
+    public static final String SMS="http://www.bwstudent.com/instantMessaging/user/smsVerification";
+
 }

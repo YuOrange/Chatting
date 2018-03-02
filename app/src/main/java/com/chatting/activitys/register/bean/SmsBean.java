@@ -4,11 +4,11 @@ package com.chatting.activitys.register.bean;
  * Created by Administrator on 2018/2/28/028.
  */
 
-public class RegisterBean {
+public class SmsBean {
 
     /**
-     * message : 注册成功
-     * status : 0000
+     * message : 发送注册码异常
+     * status : 9999
      */
 
     private String message;

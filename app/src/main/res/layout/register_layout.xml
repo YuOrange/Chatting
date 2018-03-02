@@ -46,7 +46,8 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:background="@null"
-            android:hint="请输入手机号" />
+            android:hint="请输入手机号"
+            android:phoneNumber="true" />
     </LinearLayout>
     <!--请输入密码-->
     <LinearLayout
@@ -119,8 +120,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="5dp"
-        android:background="@color/colorWhite"
-        android:padding="3dp">
+        android:background="@color/colorWhite">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -134,13 +134,14 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:background="@null"
-            android:hint="输入验证码" />
+            android:hint="输入验证码"
+            android:phoneNumber="true" />
 
         <Button
             android:id="@+id/getYZM"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="获取验证码" />
+            android:text="获取短信验证码" />
     </LinearLayout>
 
     <Button

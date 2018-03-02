@@ -20,10 +20,25 @@ public class LoggingInterceptor implements Interceptor {
     public Response intercept(Chain chain) throws IOException {
         Request request = chain.request()
                 .newBuilder()
-                .addHeader(UA, makeUA())
+                .addHeader("ak", "1")
                 .build();
         return chain.proceed(request);
     }
+
+    /*@Override
+    public Response intercept(Chain chain) throws IOException {
+        Request request = chain.request();
+        HttpUrl url = request.url().newBuilder()
+                .addQueryParameter("ak","111002554")
+                .addQueryParameter("Content-Type","application/x-www-form-urlencoded")
+                .build();
+
+        //添加请求头
+        Request builder = request.newBuilder()
+                .url(url)
+                .build();
+        return chain.proceed(builder);
+    }*/
 
     private String makeUA() {
         String s = Build.BRAND + "/" + Build.MODEL + "/" + Build.VERSION.RELEASE;
