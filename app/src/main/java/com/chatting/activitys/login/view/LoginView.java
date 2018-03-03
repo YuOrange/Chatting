@@ -8,4 +8,5 @@ import com.chatting.activitys.login.loginbean.LoginBean;
 
 public interface LoginView {
     void getlogin(LoginBean loginBean);
+
 }

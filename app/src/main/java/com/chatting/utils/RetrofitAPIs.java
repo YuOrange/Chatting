@@ -2,8 +2,6 @@ package com.chatting.utils;
 
 import com.chatting.activitys.login.loginbean.LoginBean;
 import com.chatting.activitys.register.bean.RegisterBean;
-
-import com.chatting.activitys.login.loginbean.LoginBean;
 import com.chatting.activitys.register.bean.SmsBean;
 
 import java.util.Map;
@@ -23,7 +21,9 @@ import retrofit2.http.QueryMap;
 public interface RetrofitAPIs {
     //登录
     @GET(API.LOGIN)
-    Observable<LoginBean> login(@QueryMap Map<String, String> map);
+    Observable <LoginBean>login(@QueryMap Map<String,String>map);
+
+
 
     //注册
     @FormUrlEncoded
